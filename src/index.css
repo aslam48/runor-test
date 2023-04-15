@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(16, 203, 228);
+}
+::-webkit-scrollbar-track {
+  background: grey;
+  padding: 1px;
+}
+
+.services  ::-webkit-scrollbar,
+.providers  ::-webkit-scrollbar{
+  height: 0px;
+}
+
+@layer components {
+  .input-icon-custom {
+    @apply absolute left-5 top-4 text-primary;
+  }
+  .main-x-p{
+    @apply lg:px-[10%] px-2;
+  }
+  .main-y-p{ 
+    @apply py-10 lg:py-20;
+  }
+  .transition-slow{ @apply transition-all duration-300;}
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #10CBE4;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+html{ scroll-behavior: smooth;}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3 {
+  text-transform: capitalize;
+}
+

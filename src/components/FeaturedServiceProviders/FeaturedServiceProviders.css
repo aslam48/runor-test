@@ -1,0 +1,14 @@
+@tailwind components;
+
+
+@layer components {
+    .providers .chevron {
+        @apply hover:scale-110 transition-all duration-200 text-4xl lg:text-5xl text-slate-200 rounded-full p-1 bg-primary bg-opacity-50 absolute top-[calc(50%+23px)] lg:top-[calc(50%+30px)];
+    }
+    .providers .chevron-right{
+        @apply right-0 lg:right-[8%];
+    }
+    .providers .chevron-left{
+        @apply left-0 lg:left-[8%];
+    }
+}
